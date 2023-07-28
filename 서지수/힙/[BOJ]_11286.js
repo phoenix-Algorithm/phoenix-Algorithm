@@ -188,14 +188,18 @@ let pq = new PriorityQueue(function (a, b) {
   }
 });
 
+answer = [];
+
 for (let i = 1; i <= N; i++) {
   if (Number(input[i]) !== 0) {
     pq.enq(Number(input[i]));
   } else {
     if (pq.isEmpty() === true) {
-      console.log(0);
+      answer.push(0);
     } else {
-      console.log(pq.deq());
+      answer.push(pq.deq());
     }
   }
 }
+
+console.log(answer.join("\n"));
