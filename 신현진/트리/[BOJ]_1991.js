@@ -6,9 +6,11 @@ let result = "";
 
 const tree = {};
 for (let i = 0; i < N; i++) {
-  const [node, left, right] = input[i].split(" ");
+  const [node, left, right] = input[i].trim().split(" ");
   tree[node] = [left, right];
 }
+
+console.log(tree);
 
 function preorder(node) {
   if (node === ".") return;
