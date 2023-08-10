@@ -4,6 +4,7 @@ let fs = require("fs");
 let input = fs.readFileSync("dev/stdin").toString().split("\n");
 
 // 내 풀이
+// 틀렸습니다.
 const S = Number(input[0]);
 let sum = 0;
 let count = 1;

@@ -8,6 +8,7 @@ let count = 1;
 let flag = true;
 
 // 내 풀이
+// 틀렸습니다.
 
 while (B > A) {
   if (B % 2 === 0) {
