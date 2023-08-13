@@ -1,3 +1,4 @@
+//강의 코드
 let fs = require('fs');
 let path = process.platform === 'linux' ? '/dev/stdin' : 'test.txt';
 let input = fs.readFileSync(path).toString().trim().split('-');
