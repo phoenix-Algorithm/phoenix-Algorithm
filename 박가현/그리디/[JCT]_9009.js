@@ -1,17 +1,28 @@
-// 내 코드
+// 강의 코드
 let fs = require('fs');
 let path = process.platform === 'linux' ? '/dev/stdin' : 'test.txt';
-let [n, input] = fs.readFileSync(path).toString().trim().split('\n');
-let array = input.split(' ').map(Number);
-let obj = {};
-let count = 0;
-for (let i of array) {
-  if (obj[i] > 0) {
-    obj[i] -= 1;
-  } //화살이 새로 필요한거
-  else {
-    count++;
-  } //화살이 존재함
-  obj[i - 1] += 1;
+let input = fs.readFileSync(path).toString().trim().split('\n');
+pibo = [];
+pibo.push(0);
+pibo.push(1);
+while (pibo[pibo.length - 1] < 1e9)
+  pibo.push(pibo[pibo.length - 2] + pibo[pibo.length - 1]);
+
+let testCases = Number(input[0]);
+for (let tc = 1; tc <= testCases; tc++) {
+  let n = Number(input[tc]);
+  let result = [];
+  let i = pibo.length - 1; // 가장 큰 피보나치 수의 인덱스
+  while (n > 0) {
+    // n이 0이 될 때까지
+    if (n >= pibo[i]) {
+      // 가능한 큰 피보나치 수부터 빼기
+      n -= pibo[i];
+      result.push(pibo[i]);
+    }
+    i--;
+  }
+  let answer = '';
+  for (let i = result.length - 1; i >= 0; i--) answer += result[i] + ' '; // 오름차순 출력
+  console.log(answer);
 }
-console.log(count);
