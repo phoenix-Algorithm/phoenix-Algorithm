@@ -54,7 +54,7 @@ else {
 let arr = input[1].split(" ").map(Number);
 let m = Number(input[2]);
 
-let start = Math.min(...arr);
+let start = 1;
 let end = Math.max(...arr);
 
 let result = 0;
