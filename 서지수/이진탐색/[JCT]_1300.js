@@ -14,7 +14,7 @@ while (start <= end) {
   let mid = parseInt((start + end) / 2);
   let total = 0;
   for (let i = 1; i <= N; i++) {
-    total += Math.min(parsrInt(mid / i), N);
+    total += Math.min(parseInt(mid / i), N);
   }
   if (total >= k) {
     result = mid;
