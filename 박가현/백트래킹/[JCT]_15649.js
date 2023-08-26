@@ -1,3 +1,4 @@
+// 정답 코드에서 조금 변형한 것입니다
 let fs = require('fs');
 let path = process.platform === 'linux' ? '/dev/stdin' : 'test.txt';
 let input = fs.readFileSync(path).toString().trim().split('\n');
