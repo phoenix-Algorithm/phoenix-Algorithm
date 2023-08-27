@@ -27,7 +27,6 @@ function dfs(depth) {
       //첫째 문자열: 가장 작은 수
       if (first == "") {
         first = current;
-        console.log(current);
       }
     }
     return;
