@@ -1,5 +1,6 @@
 // 2-2. 트리
 
+// 강의 풀이
 const fs = require('fs');
 const input = fs.readFileSync('dev/stdin').toString().split('\n');
 
