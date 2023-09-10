@@ -1,5 +1,6 @@
 // 4-2. 숫자고르기
 
+// 강의 참고
 const fs = require('fs');
 const input = fs.readFileSync('dev/stdin').toString().split('\n');
 
