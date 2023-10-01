@@ -1,5 +1,8 @@
 // 3-2. 극장 좌석
 
+// 결국에 강의 답안 봤습니다...
+// 마지막 문제라 혼자 풀고 싶었는데 아쉬워요,,,ㅜ
+
 const fs = require('fs');
 const input = fs.readFileSync('dev/stdin').toString().split('\n');
 
