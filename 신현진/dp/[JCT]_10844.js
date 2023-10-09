@@ -15,8 +15,6 @@ for (let j = 1; j <= 9; j++) {
 
 for (let i = 2; i <= n; i++) {
   for (let j = 0; j <= 9; j++) {
-    dp[i][j] = 0;
-
     //j가 0일때, 9일때, 그 외(0보다 크고 9보다 클 때)
     if (j === 0) dp[i][0] = dp[i - 1][j + 1];
     else if (j === 9) dp[i][9] = dp[i - 1][j - 1];
