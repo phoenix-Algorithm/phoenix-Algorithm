@@ -14,7 +14,3 @@ function solution(n) {
   hanoi(n, 1, 3, 2);
   return answer;
 }
-
-const n = 3;
-const result = solution(n);
-console.log(result);
